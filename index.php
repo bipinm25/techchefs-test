@@ -23,14 +23,13 @@ function getOutput($str_1, $str_2, $mod = 0){
         $string_2 = $str_1;
     }
 
-    $str_array = str_split($string_1,1);
+    $str_array = str_split($string_1, 1);
     foreach ($str_array as $s) {
-        if(!in_array($s, str_split($string_2,1))){
+        if(!in_array($s, str_split($string_2, 1))){
             $output[] = $s;
         }
     }
     return implode("", $output);
-
 }
 
 ?>
